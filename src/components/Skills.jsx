@@ -27,7 +27,7 @@ const skillsData = [
     id: 133
   },
   {
-    title: 'Materiales Profesionales',
+    title: 'Maquinaria Profesional',
     text: 'Hacemos uso de los mejores equipos para tener mayor seguridad y efectividad de tu proyecto.',
     img: img4,
     id: 4
@@ -56,7 +56,7 @@ const SkillsCard = ({ card }) => {
       <img src={ img } alt="icono" className='skills__card__img' />
 
       <div className="skills__texts">
-        <h3 className='skills__card__title'>{ title }</h3>
+        <h3 className='title--subrayado'>{ title }</h3>
         <p className='skills__card__text'> { text } </p>
       </div>
 
