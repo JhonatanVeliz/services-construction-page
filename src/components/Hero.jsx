@@ -1,4 +1,4 @@
-import React from 'react'
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
 
         <p className='hero__text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio totam ad praesentium tempora dolore voluptate provident placeat, minima unde explicabo omnis, iste molestiae, cum laboriosam!</p>
 
-        <a href='#' className='hero__link'>Asesoría Gratuita</a>
+        <HashLink to={'/#formulario'} className='hero__link'>Asesoría Gratuita</HashLink>
 
       </div>
 

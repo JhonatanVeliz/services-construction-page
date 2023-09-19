@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const About = () => {
   return (
@@ -78,7 +78,7 @@ const About = () => {
 
           <div className="about__info__form">
             <span className='about__info__form__title'>¿ Necesitas más información ?</span>
-            <Link className='about__info__form__btn'>Más Información</Link>
+            <HashLink to={'/#formulario'} className='about__info__form__btn'>Más Información</HashLink>
           </div>
 
         </main>

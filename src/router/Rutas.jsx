@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../components/Layout";
 import Index from "../pages/Index";
+import Services from "../pages/Services";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                element: <div>Servicios</div>
+                element: <Services />
             },
             {
                 path: '/projects',

@@ -17,6 +17,11 @@
 body{
   background-color: var(--color-white);
 }
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 .grid{
   width: 97%;
   max-width: 1400px;
@@ -61,6 +66,8 @@ body{
 }
 .sidebar{
   color: var(--color-white);
+  display: flex;
+  align-items: center;
 }
 .icon-menu{
   display: none;
@@ -211,6 +218,7 @@ body{
   padding: 1.5rem;
   font-weight: var(--weight-6);
   transition: .3s linear;
+  text-align: center;
 }
 .about__info__form__btn:hover{
   background-color: var(--color-orange);
@@ -274,13 +282,13 @@ body{
   font-size: 2rem;
   font-weight: var(--weight-6);
 }
-.form__input{
+.form__input, .form__textarea{
   padding: 1rem;
   border: none;
   border-radius: 5px;
+  text-transform: capitalize;
 }
 .form__textarea{
-  padding: 1.5rem;
   min-height: 10rem;
   max-height: 10rem;
   max-width: 30rem;
@@ -340,4 +348,116 @@ body{
   color: var(--color-white);
   font-size: 2rem;
   font-weight: var(--weight-6);
+}
+@media screen and (max-width: 975px) {
+  .skills{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about__container{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .about__aside{
+    max-width: 100%;
+    width: 100%;
+  }
+  .about__aside__ul{
+    gap: 1rem;
+  }
+  .about__info__cards{
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .icon-menu{
+    display: inline-block;
+    max-width: 5rem;
+  }
+  .nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-black);
+    display: grid;
+    place-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s linear;
+    padding: 6rem 0;
+  }
+  .nav--active{
+    opacity: 1;
+    z-index: 50;
+  }
+  .formulario{
+    width: 100%;
+  }
+  .formulario__container{
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .form{
+    width: 70%;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    z-index: 20;
+    transform: translate(-50%, 0%);
+    background: transparent;
+    color: var(--color-white);
+  }
+  .form__title{
+    border: none;
+    margin: 0;
+  }
+  .form__input{
+    font-size: 2rem;
+  }
+  .form__submit{
+    background-color: var(--color-orange);
+  }
+  .form__footer__img__item{
+    height: 55rem;
+  }
+  .testimonial__cards{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .skills{
+    grid-template-columns: 1fr;
+  }
+  .skills__card__text{
+    font-size: 1.8rem;
+  }
+  .about__info__cards{
+    grid-template-columns: 1fr;
+  }
+  .about__info__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__info__card__title{
+    width: 70%;
+    text-align: center;
+  }
+  .about__info__card__text{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .form{
+    margin: 0;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .about__aside{
+    padding: 1.5rem;
+  }
+  .about__info__card__text{
+    text-wrap: wrap;
+  }
 }

@@ -36,7 +36,7 @@ const Formulario = () => {
     <div className='grid section formulario'>
       <h2 className='title'>Contactanos</h2>
 
-      <div className="formulario__container">
+      <div className="formulario__container" id='formulario'>
 
         <form className='form' onSubmit={handleSubmit}>
 
