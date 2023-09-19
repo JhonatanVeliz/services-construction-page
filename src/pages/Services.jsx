@@ -34,42 +34,42 @@ const serviceData = [
     img   : servicio,
     alt   : 'servicio de construccion', 
     title : 'Construcción de Casa', 
-    text  : 'casa nuevas de casas anticudas y viejas le remodelamos todo sisisisisisisisisisis yesyesyesyesyesyes',
+    text  : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa quaerat aliquam facere iusto illum placeat voluptate doloribus praesentium! Ullam pariatur tempore dolor ratione rem expedita',
     id : 311
   },
   {
     img   : servicio,
     alt   : 'servicio de construccion', 
     title : 'Construcción de Casa', 
-    text  : 'casa nuevas de casas anticudas y viejas le remodelamos todo sisisisisisisisisisis yesyesyesyesyesyes',
+    text  : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa quaerat aliquam facere iusto illum placeat voluptate doloribus praesentium! Ullam pariatur tempore dolor ratione rem expedita',
     id : 312
   },
   {
     img   : servicio,
     alt   : 'servicio de construccion', 
     title : 'Construcción de Casa', 
-    text  : 'casa nuevas de casas anticudas y viejas le remodelamos todo sisisisisisisisisisis yesyesyesyesyesyes',
+    text  : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa quaerat aliquam facere iusto illum placeat voluptate doloribus praesentium! Ullam pariatur tempore dolor ratione rem expedita',
     id : 313
   },
   {
     img   : servicio,
     alt   : 'servicio de construccion', 
     title : 'Construcción de Casa', 
-    text  : 'casa nuevas de casas anticudas y viejas le remodelamos todo sisisisisisisisisisis yesyesyesyesyesyes',
+    text  : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa quaerat aliquam facere iusto illum placeat voluptate doloribus praesentium! Ullam pariatur tempore dolor ratione rem expedita',
     id : 314
   },
   {
     img   : servicio,
     alt   : 'servicio de construccion', 
     title : 'Construcción de Casa', 
-    text  : 'casa nuevas de casas anticudas y viejas le remodelamos todo sisisisisisisisisisis yesyesyesyesyesyes',
+    text  : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa quaerat aliquam facere iusto illum placeat voluptate doloribus praesentium! Ullam pariatur tempore dolor ratione rem expedita',
     id : 315
   },
   {
     img   : servicio,
     alt   : 'servicio de construccion', 
     title : 'Construcción de Casa', 
-    text  : 'casa nuevas de casas anticudas y viejas le remodelamos todo sisisisisisisisisisis yesyesyesyesyesyes',
+    text  : 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ipsa quaerat aliquam facere iusto illum placeat voluptate doloribus praesentium! Ullam pariatur tempore dolor ratione rem expedita',
     id : 316
   }
 ]
