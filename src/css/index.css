@@ -76,10 +76,6 @@ button{
   display: flex;
   gap: 1.5rem;
 }
-.nav--active{
-  opacity: 1;
-  z-index: 50;
-}
 .nav__icon{
   max-width: 5rem;
 }
@@ -391,6 +387,10 @@ button{
     opacity: 0;
     transition: .3s linear;
     padding: 6rem 0;
+  }
+  .nav--active{
+    opacity: 1;
+    z-index: 50;
   }
   .formulario{
     width: 100%;
