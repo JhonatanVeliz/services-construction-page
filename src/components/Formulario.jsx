@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import img from '../assets/ultimate.gif'
+
+import { Link } from 'react-router-dom';
+
+import img from '../assets/ultimate.gif';
+import facebook from '../assets/Facebook.png';
+import instagram from '../assets/Instagram.png';
+import whatsApp from '../assets/WhatsApp.png';
 
 const Formulario = () => {
 
@@ -71,8 +77,19 @@ const Formulario = () => {
         <footer className='form__footer'>
 
           <aside className='form__footer__redes'>
-            facebook, instagram, whatsApp
-            &copy; Todos los derechos reservados 2023
+
+            <Link to={'/'}>
+              <img className='form__footer__icon' src={ facebook } alt="facebook" />
+            </Link>
+
+            <Link to={'/'}>
+              <img className='form__footer__icon' src={ whatsApp } alt="whatsApp" />
+            </Link>
+
+            <Link to={'/'}>
+              <img className='form__footer__icon' src={ instagram } alt="instagram" />
+            </Link>
+            
           </aside>
 
           <div className='form__footer__img'>
