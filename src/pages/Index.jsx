@@ -4,6 +4,7 @@ import Skills from '../components/Skills';
 import About from '../components/About';
 import LocationMap from '../components/LocationMap';
 import Testimonials from '../components/Testimonials';
+import Formulario from '../components/Formulario';
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <About />
       <LocationMap />
       <Testimonials />
+      <Formulario />
     </>
   )
 }

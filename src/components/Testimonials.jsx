@@ -17,13 +17,13 @@ const testimonialsData = [
     name: 'Juan Vásquez',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid asperiores maiores voluptatum blanditiis adipisci, nihil necessitatibus vero officia aut',
     qualification: 5,
-    id: 211
+    id: 222
   },
   {
     name: 'Juan Vásquez',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid asperiores maiores voluptatum blanditiis adipisci, nihil necessitatibus vero officia aut',
     qualification: 5,
-    id: 211
+    id: 233
   }
 ];
 
@@ -38,7 +38,6 @@ const imgStars = {
 const TestimonialCard = ({ testimonial }) => {
 
   const { name, text, qualification } = testimonial;
-  console.log(name, text, qualification);
 
   return (
     <div className="testimonial__card">
