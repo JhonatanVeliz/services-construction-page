@@ -22,6 +22,18 @@ button{
   border: none;
   cursor: pointer;
 }
+.btn--contacto{
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(26, 177, 26);
+  padding: 1.5rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 25;
+  bottom: 5rem;
+  right: 5rem;
+  box-shadow: 0px 0px 1rem #000;
+}
 .grid{
   width: 97%;
   max-width: 1400px;
@@ -452,6 +464,10 @@ button{
   .form{
     margin: 0;
     min-width: 100%;
+  }
+  .btn--contacto{
+    right: 2rem;
+    bottom: 2rem;
   }
 }
 @media screen and (max-width: 360px) {
