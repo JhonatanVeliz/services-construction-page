@@ -17,7 +17,7 @@ const About = () => {
 
             <li>
               <h4>Experiencia y Trayectoria:</h4>
-              <span>Con mas de 10 años de experiencia en el area de construcción te aseguramos que tendras un trabajo de calidad.</span>
+              <span>Con 35,000m2 y más de 10 años de experiencia en la construcción te aseguramos un trabajo de alta calidad. <br /> <i>¡ PARA LOS MÁS EXIGENTES !</i></span>
             </li>
 
             <li>

@@ -9,14 +9,14 @@ import img6 from '../assets/seguridad.png';
 
 const skillsData = [
   {
-    title: 'Planificación',
-    text: 'Planificamos tus proyectos de inicio a fin a tu medida.',
+    title: 'Planificación y Construcción',
+    text: 'Construcción, planificación y supervisión de toda la obra realizada por un arquitecto  profesional calificado y con amplia experiencia.',
     img: img1,
     id: 111
   },
   {
     title: 'Con las mejores herramientas',
-    text: 'Construimos tus proyectos con las mejores herramientas.',
+    text: 'Construimos tus proyectos con las mejores herramienta y equipo para brindar un trabajo de alta calidad.',
     img: img2,
     id: 122
   },
@@ -28,21 +28,27 @@ const skillsData = [
   },
   {
     title: 'Materiales',
-    text: 'Contamos con una amplia variedad de materiales de alta calidad para brindarte la mejor experiencia.',
+    text: 'Contamos con una amplia variedad de materiales de alta calidad para brindarte la mejor experiencia con acabados sencillos y de lujo.',
     img: img5,
     id: 144
   },
   {
     title: 'Personal Capacitado',
-    text: 'Nos aseguramos de que cada personal esté altamente capacitado para brindarte la mayor seguridad y confianza en tu proyecto.',
+    text: 'Nos aseguramos de que cada personal esté altamente capacitado, en constante capacitación y actualización en los métodos constructivos para brindarte la mayor seguridad y confianza en tu proyecto.',
     img: img6,
     id: 155
   },
   {
     title: 'Alquiler de Herramientas y Equipo',
-    text: 'Contamos con una gran cantidad de herramientas que suplirán las necesidades de tu proyecto.',
+    text: 'Contamos con una gran cantidad de herramientas entre las cuales son rotomartillo, pulidoras, concretera, puntales, placa vibratoria, andamio, equipo para textura, vibrador de concreto y mucho más.',
     img: img3,
     id: 166
+  },
+  {
+    title: 'Garatía',
+    text: 'Todos nuestros servicios cumplen con garantía. Damos garantía por los trabajos realizados.',
+    img: img2,
+    id: 177
   },
 ];
 

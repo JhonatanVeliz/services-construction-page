@@ -78,11 +78,11 @@ const Formulario = () => {
 
           <aside className='form__footer__redes'>
 
-            <Link to={'/'}>
+            <Link to={'https://www.facebook.com/profile.php?id=100063931967239'} target='_blank'>
               <img className='form__footer__icon' src={ facebook } alt="facebook" />
             </Link>
 
-            <Link to={'/'}>
+            <Link to={'https://wa.me/50255587475?text=*Consulta*'} target='_blank'>
               <img className='form__footer__icon' src={ whatsApp } alt="whatsApp" />
             </Link>
 
