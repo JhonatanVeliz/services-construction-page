@@ -22,7 +22,7 @@ const About = () => {
 
             <li>
               <h4>Garantía de Calidad:</h4>
-              <span>Demostramos compromiso y satisfaccion del cliente a la hora de realizar los proyectos.</span>
+              <span>Demostramos compromiso y satisfaccion del cliente a la hora de realizar los proyectos. <br /> <i>Garantía por los trabajos realizados.</i></span>
             </li>
 
             <li>

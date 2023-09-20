@@ -142,6 +142,32 @@ button{
   font-size: 2rem;
   font-weight: var(--weight-6);
 }
+/* Fundador */
+.fundador{
+  background-color: var(--color-black);
+  padding: 4rem 0;
+}
+.fundador__container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.fundador__container__foto img{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fundador__title{
+  color: var(--color-white);
+  border-bottom: 1rem solid var(--color-white);
+}
+.fundador__text{
+  color: var(--color-white);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
 /* Skills */
 .skills{
   display: grid;
@@ -364,6 +390,18 @@ button{
   font-weight: var(--weight-6);
 }
 @media screen and (max-width: 975px) {
+  .fundador__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    place-items: center;
+  }
+  .fundador__container__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .skills{
     grid-template-columns: repeat(2, 1fr);
   }

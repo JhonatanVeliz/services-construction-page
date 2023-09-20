@@ -43,13 +43,7 @@ const skillsData = [
     text: 'Contamos con una gran cantidad de herramientas entre las cuales son rotomartillo, pulidoras, concretera, puntales, placa vibratoria, andamio, equipo para textura, vibrador de concreto y mucho más.',
     img: img3,
     id: 166
-  },
-  {
-    title: 'Garatía',
-    text: 'Todos nuestros servicios cumplen con garantía. Damos garantía por los trabajos realizados.',
-    img: img2,
-    id: 177
-  },
+  }
 ];
 
 const SkillsCard = ({ card }) => {
