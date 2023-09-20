@@ -21,29 +21,29 @@ const skillsData = [
     id: 122
   },
   {
-    title: 'Productos Sólidos',
-    text: 'Utilizamos las mejores tecnicas de construcción para darte el mejor trabajo.',
-    img: img3,
+    title: 'Maquinaria Profesional',
+    text: 'Hacemos uso de los mejores equipos para tener mayor seguridad y efectividad en tu proyecto.',
+    img: img4,
     id: 133
   },
   {
-    title: 'Maquinaria Profesional',
-    text: 'Hacemos uso de los mejores equipos para tener mayor seguridad y efectividad de tu proyecto.',
-    img: img4,
-    id: 4
-  },
-  {
     title: 'Materiales',
-    text: 'Contamos con una amplia variedad de materiales de alta calidad para darte la mejor experiencia',
+    text: 'Contamos con una amplia variedad de materiales de alta calidad para brindarte la mejor experiencia.',
     img: img5,
-    id: 5
+    id: 144
   },
   {
     title: 'Personal Capacitado',
-    text: 'Nos aseguramos que cada personal este altamente capacitado para tener la mayor seguridad y confianza de su proyecto.',
+    text: 'Nos aseguramos de que cada personal esté altamente capacitado para brindarte la mayor seguridad y confianza en tu proyecto.',
     img: img6,
-    id: 6
-  }
+    id: 155
+  },
+  {
+    title: 'Alquiler de Herramientas y Equipo',
+    text: 'Contamos con una gran cantidad de herramientas que suplirán las necesidades de tu proyecto.',
+    img: img3,
+    id: 166
+  },
 ];
 
 const SkillsCard = ({ card }) => {
