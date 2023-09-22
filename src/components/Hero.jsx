@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className='hero'>
 
-      <div className="hero__content animate__animated animate__flipInX">
+      <div className="hero__content">
 
         <h1 className='hero__title'>Construcciones M-A</h1>
 
@@ -17,5 +17,4 @@ const Hero = () => {
     </section>
   )
 }
-
 export default Hero

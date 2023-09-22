@@ -8,8 +8,6 @@ import Formulario from '../components/Formulario';
 import ButtonContacto from '../components/ButtonContacto';
 import Fundador from '../components/Fundador';
 
-import 'animate.css';
-
 const Index = () => {
   return (
     <>
