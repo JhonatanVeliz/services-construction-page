@@ -5,9 +5,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/doctora_coloch/coloch_1.jpg",
-        "img_2": "/assets/projects/doctora_coloch/coloch_2.jpg",
-        "img_3": "/assets/projects/doctora_coloch/coloch_3.jpg"
+        "img_1": "/assets/coloch_1.jpg",
+        "img_2": "/assets/coloch_2.jpg",
+        "img_3": "/assets/coloch_3.jpg"
     },
     {
         "id": 1442,
@@ -15,9 +15,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/gravileas/gravielas_1.jpg",
-        "img_2": "/assets/projects/gravileas/gravielas_2.jpg",
-        "img_3": "/assets/projects/gravileas/gravielas_3.jpg"
+        "img_1": "/assets/gravielas_1.jpg",
+        "img_2": "/assets/gravielas_2.jpg",
+        "img_3": "/assets/gravielas_3.jpg"
     },
     {
         "id": 1443,
@@ -25,9 +25,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/gustavo_reyes/g_1.jpg",
-        "img_2": "/assets/projects/gustavo_reyes/g_2.jpg",
-        "img_3": "/assets/projects/gustavo_reyes/g_3.jpg"
+        "img_1": "/assets/g_1.jpg",
+        "img_2": "/assets/g_2.jpg",
+        "img_3": "/assets/g_3.jpg"
     },
     {
         "id": 1445,
@@ -35,9 +35,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/juana/j_1.jpg",
-        "img_2": "/assets/projects/juana/j_2.jpg",
-        "img_3": "/assets/projects/juana/j_3.jpg"
+        "img_1": "/assets/j_1.jpg",
+        "img_2": "/assets/j_2.jpg",
+        "img_3": "/assets/j_3.jpg"
     },
     {
         "id": 1446,
@@ -45,9 +45,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/lux/l_1.jpg",
-        "img_2": "/assets/projects/lux/l_2.jpg",
-        "img_3": "/assets/projects/lux/l_3.jpg"
+        "img_1": "/assets/l_1.jpg",
+        "img_2": "/assets/l_2.jpg",
+        "img_3": "/assets/l_3.jpg"
     },
     {
         "id": 1447,
@@ -55,9 +55,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/pachica/p_1.jpg",
-        "img_2": "/assets/projects/pachica/p_2.jpg",
-        "img_3": "/assets/projects/pachica/p_3.jpg"
+        "img_1": "/assets/p_1.jpg",
+        "img_2": "/assets/p_2.jpg",
+        "img_3": "/assets/p_3.jpg"
     },
     {
         "id": 1448,
@@ -65,9 +65,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/pulte/pu_1.jpg",
-        "img_2": "/assets/projects/pulte/pu_2.jpg",
-        "img_3": "/assets/projects/pulte/pu_3.jpg"
+        "img_1": "/assets/pu_1.jpg",
+        "img_2": "/assets/pu_2.jpg",
+        "img_3": "/assets/pu_3.jpg"
     },
     {
         "id": 1449,
@@ -75,9 +75,9 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/resina_epoxica/r_1.jpg",
-        "img_2": "/assets/projects/resina_epoxica/r_2.jpg",
-        "img_3": "/assets/projects/resina_epoxica/r_3.jpg"
+        "img_1": "/assets/r_1.jpg",
+        "img_2": "/assets/r_2.jpg",
+        "img_3": "/assets/r_3.jpg"
     },
     {
         "id": 14410,
@@ -85,8 +85,8 @@
         "text_1": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_2": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
         "text_3": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-        "img_1": "/assets/projects/rudy_guzman/ru_1.jpg",
-        "img_2": "/assets/projects/rudy_guzman/ru_2.jpg",
-        "img_3": "/assets/projects/rudy_guzman/ru_3.jpg"
+        "img_1": "/assets/ru_1.jpg",
+        "img_2": "/assets/ru_2.jpg",
+        "img_3": "/assets/ru_3.jpg"
     }
 ]
