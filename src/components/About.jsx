@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const About = () => {
   return (
-    <div className='grid about section'>
+    <div className='grid about section animate__animated animate__fadeInLeft'>
 
       <h2 className='title title--gray'>Nosotros</h2>
 

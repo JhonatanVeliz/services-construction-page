@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <>
       <header className='header'>
-        <div className="grid header__nav">
+        <div className="grid header__nav animate__animated animate__fadeInDown">
 
           <Link to='/'>
             <img className='nav__icon' src={icon} alt="logo" />

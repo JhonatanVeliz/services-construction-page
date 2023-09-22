@@ -7,6 +7,7 @@
   --color-white: #ededed;
   --color-orange: #ff6a06;
   --color-yellow: #FFB400;
+  --color-red: #961212;
 }
 *{
   padding: 0;
@@ -105,7 +106,7 @@ button{
 }
 /* SECTION OF HERO */
 .hero{
-  min-height: 85vh;
+  min-height: 90vh;
   background: url(../assets/bg.png) no-repeat;
   background-position: center;
   background-size: cover;
@@ -515,5 +516,13 @@ button{
   }
   .about__info__card__text{
     text-wrap: wrap;
+  }
+  .about__info__form{
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .about__info__form__title{
+    text-align: center;
   }
 }
