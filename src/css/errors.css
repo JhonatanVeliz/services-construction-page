@@ -1,0 +1,19 @@
+.error{
+    color: var(--color-red);
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+    font-weight: var(--weight-6);
+}
+.error::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-red);
+    width: 1.5rem;
+    height: 100%;
+}
