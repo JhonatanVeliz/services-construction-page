@@ -472,7 +472,7 @@ button{
     background-color: var(--color-orange);
   }
   .form__footer__img__item{
-    height: 55rem;
+    height: 60rem;
   }
   .testimonial__cards{
     grid-template-columns: 1fr;

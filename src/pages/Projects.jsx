@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, memo, useState } from 'react';
 
 import coloch_1 from '../assets/projects/doctora_coloch/coloch_1.jpg';
 import coloch_2 from '../assets/projects/doctora_coloch/coloch_2.jpg';
@@ -33,7 +33,7 @@ import '../css/projects.css';
 const proyectos = [
   {
       id: 1441,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 1",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -43,7 +43,7 @@ const proyectos = [
   },
   {
       id: 1442,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 2",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -53,7 +53,7 @@ const proyectos = [
   },
   {
       id: 1443,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 3",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -63,7 +63,7 @@ const proyectos = [
   },
   {
       id: 1445,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 4",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -73,7 +73,7 @@ const proyectos = [
   },
   {
       id: 1446,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 5",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -83,7 +83,7 @@ const proyectos = [
   },
   {
       id: 1447,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 6",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -93,7 +93,7 @@ const proyectos = [
   },
   {
       id: 1448,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 7",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -103,7 +103,7 @@ const proyectos = [
   },
   {
       id: 1449,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 8",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -113,7 +113,7 @@ const proyectos = [
   },
   {
       id: 14410,
-      title: "Nombre del Proyecto",
+      title: "Nombre del Proyecto 9",
       text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
       text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
@@ -185,25 +185,27 @@ const CardPortada = ({ project, portada, setPortada }) => {
   )
 }
 
-const ProjectListItem = ({ project, setCardInfo, setPortada }) => {
-
+const ProjectListItem = memo(({ project, cardInfo, setCardInfo, setPortada }) => {
   const { img_1, title } = project;
 
+  const { title: cardTitle } = cardInfo[0];
+
   const handleCard = project => {
-    setPortada(img_1)
-    setCardInfo([ project ])
+    setPortada(img_1);
+    setCardInfo([project]);
   }
 
   return (
     <div 
-      className="projects__item" 
-      data-content={ title }
+      className={`projects__item ${ cardTitle == title ? 'projects__item--active' : null }`}
+      data-content={title}
       onClick={() => handleCard(project)}
     >
-      <img src={ img_1 } alt={ title } />
+      <img src={img_1} alt={title} />
     </div>
   )
-}
+});
+
 
 const Projects = () => {
 
@@ -237,9 +239,10 @@ const Projects = () => {
           {
             proyectos.map( project => (
               <ProjectListItem 
-                key={project.id} 
-                project={project}
-                setCardInfo={setCardInfo}
+                key={ project.id} 
+                project={ project }
+                cardInfo={ cardInfo }
+                setCardInfo={ setCardInfo }
                 setPortada={ setPortada }
               />
             ))
