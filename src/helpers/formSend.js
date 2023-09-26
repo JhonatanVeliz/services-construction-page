@@ -1,7 +1,7 @@
 export const formSend = ({ name, tel, texto }) => {
 
     // Variable con celular de la empresa que recibe el fomrulario
-    const ownerPhone = '50670910';
+    const ownerPhone = '55587475';
 
     // variable con la url de whatsApp
     const url = `https://api.whatsapp.com/send?phone=${ownerPhone}&text=
