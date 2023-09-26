@@ -6,7 +6,7 @@
     position: relative;
     border-radius: .5rem;
     overflow: hidden;
-    font-weight: var(--weight-6);
+    font-weight: var(--weight-8);
 }
 .error::after{
     content: '';

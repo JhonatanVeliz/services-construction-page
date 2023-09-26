@@ -63,10 +63,18 @@ img {
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
 }
-
 .card__info__text {
     line-height: 1.4;
     padding-bottom: 1.5rem;
+}
+.card__info__btn{
+    text-align: center;
+    color: var(--color-white);
+    font-weight: var(--weight-6);
+    background-color: var(--color-red);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
 }
 /* Listado de proyectos */
 .projects-list{

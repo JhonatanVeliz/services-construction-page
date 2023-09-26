@@ -1,4 +1,5 @@
 import { useMemo, memo, useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import coloch_1 from '../assets/projects/doctora_coloch/coloch_1.jpg';
 import coloch_2 from '../assets/projects/doctora_coloch/coloch_2.jpg';
@@ -179,6 +180,9 @@ const CardPortada = ({ project, portada, setPortada }) => {
         <p className='card__info__text'>
           {text_3}
         </p>
+
+        <HashLink to={'/#formulario'} className='btn card__info__btn'
+        >¿ Creamos tu próximo proyecto ?</HashLink>
 
       </article>
     </>
