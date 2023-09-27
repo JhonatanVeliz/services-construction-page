@@ -2,6 +2,26 @@ import { HashLink } from 'react-router-hash-link';
 
 import servicio from '../assets/service.jpg';
 import '../css/services.css'
+import { useState } from 'react';
+
+
+const ServiceCardImg = ({ img, alt}) => {
+  const [isloadImg, setIsLoadImg] = useState(true);
+
+  const handleLoad = () => {
+    setIsLoadImg(false);
+  }
+
+  return (
+    <div className={`${isloadImg ? 'loader--active' : 'loader'}`}>
+      <img
+        src={img}
+        alt={ alt }
+        onLoad={handleLoad}
+      />
+    </div>
+  )
+}
 
 const ServiceCard = ({ service }) => {
 
@@ -11,7 +31,7 @@ const ServiceCard = ({ service }) => {
 
     <div className="services__card">
 
-      <img src={ img } alt={ alt } />
+      <ServiceCardImg img={ img } alt={ alt }/>
 
       <details>
 
