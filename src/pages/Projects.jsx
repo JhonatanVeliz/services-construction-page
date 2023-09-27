@@ -1,5 +1,6 @@
 import { useMemo, memo, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { newId } from '../helpers/id';
 
 import coloch_1 from '../assets/projects/doctora_coloch/coloch_1.jpg';
 import coloch_2 from '../assets/projects/doctora_coloch/coloch_2.jpg';
@@ -33,94 +34,94 @@ import '../css/projects.css';
 
 const proyectos = [
   {
-      id: 1441,
-      title: "Nombre del Proyecto 1",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: coloch_1,
-      img_2: coloch_2,
-      img_3: coloch_3
+    id: 1441,
+    title: "Doctora Coloch",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: coloch_1,
+    img_2: coloch_2,
+    img_3: coloch_3
   },
   {
-      id: 1442,
-      title: "Nombre del Proyecto 2",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: gravielas_1,
-      img_2: gravielas_2,
-      img_3: gravielas_3
+    id: 1442,
+    title: "Gravileas",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: gravielas_1,
+    img_2: gravielas_2,
+    img_3: gravielas_3
   },
   {
-      id: 1443,
-      title: "Nombre del Proyecto 3",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: gustavo_1,
-      img_2: gustavo_2,
-      img_3: gustavo_3
+    id: 1443,
+    title: "Sr. Gustavo Reyes",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: gustavo_1,
+    img_2: gustavo_2,
+    img_3: gustavo_3
   },
   {
-      id: 1445,
-      title: "Nombre del Proyecto 4",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: juana_1,
-      img_2: juana_2,
-      img_3: juana_3
+    id: 1445,
+    title: "Sra. Juana",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: juana_1,
+    img_2: juana_2,
+    img_3: juana_3
   },
   {
-      id: 1446,
-      title: "Nombre del Proyecto 5",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: lux_1,
-      img_2: lux_2,
-      img_3: lux_3
+    id: 1446,
+    title: "Proyecto Lux",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: lux_1,
+    img_2: lux_2,
+    img_3: lux_3
   },
   {
-      id: 1447,
-      title: "Nombre del Proyecto 6",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: pachica_1,
-      img_2: pachica_2,
-      img_3: pachica_3
+    id: 1447,
+    title: "Sra. Pachica",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: pachica_1,
+    img_2: pachica_2,
+    img_3: pachica_3
   },
   {
-      id: 1448,
-      title: "Nombre del Proyecto 7",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: pulte_1,
-      img_2: pulte_2,
-      img_3: pulte_3
+    id: 1448,
+    title: "Proyecto Pulte",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: pulte_1,
+    img_2: pulte_2,
+    img_3: pulte_3
   },
   {
-      id: 1449,
-      title: "Nombre del Proyecto 8",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: resina_1,
-      img_2: resina_2,
-      img_3: resina_3
+    id: 1449,
+    title: "Resina Epóxica",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: resina_1,
+    img_2: resina_2,
+    img_3: resina_3
   },
   {
-      id: 14410,
-      title: "Nombre del Proyecto 9",
-      text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
-      img_1: rudy_1,
-      img_2: rudy_2,
-      img_3: rudy_3
+    id: 14410,
+    title: "Sr. Rudy Guzman",
+    text_1: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_2: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    text_3: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt magni magnam iusto unde eius dolor delectus sit praesentium omnis possimus?",
+    img_1: rudy_1,
+    img_2: rudy_2,
+    img_3: rudy_3
   }
 ];
 
@@ -128,6 +129,8 @@ const CardPortada = ({ project, portada, setPortada }) => {
 
   const
     { title, text_1, text_2, text_3, img_1, img_2, img_3 } = project;
+
+  const images = [img_1, img_2, img_3];
 
   const PortadaActual = useMemo(() => {
     return <img src={portada} alt="imagen de portada" className='card__imgs__items__portada' />;
@@ -145,21 +148,11 @@ const CardPortada = ({ project, portada, setPortada }) => {
 
           {PortadaActual}
 
-          <img src={img_1}
-            alt="imagen 1 del proyecto"
-            className='card__imgs__items__option'
-            onClick={() => handlePortada(img_1)}
-          />
-          <img src={img_2}
-            alt="imagen 1 del proyecto"
-            className='card__imgs__items__option'
-            onClick={() => handlePortada(img_2)}
-          />
-          <img src={img_3}
-            alt="imagen 1 del proyecto"
-            className='card__imgs__items__option'
-            onClick={() => handlePortada(img_3)}
-          />
+          {
+            images.map(img => (
+              <CardImg key={newId()} img={img} handlePortada={handlePortada} />
+            ))
+          }
 
         </div>
 
@@ -189,6 +182,27 @@ const CardPortada = ({ project, portada, setPortada }) => {
   )
 }
 
+const CardImg = ({ img, handlePortada }) => {
+  const [isloadImg, setIsLoadImg] = useState(true);
+
+  const handleLoad = () => {
+    setIsLoadImg(false);
+  }
+
+  return (
+    <div className={`${isloadImg ? 'loader--active' : 'loader'}`}>
+      <img
+        src={img}
+        alt="imagen del proyecto"
+        className='card__imgs__items__option'
+        onClick={() => handlePortada(img)}
+        onLoad={handleLoad}
+      />
+    </div>
+  )
+}
+
+
 const ProjectListItem = memo(({ project, cardInfo, setCardInfo, setPortada }) => {
   const { img_1, title } = project;
 
@@ -200,8 +214,8 @@ const ProjectListItem = memo(({ project, cardInfo, setCardInfo, setPortada }) =>
   }
 
   return (
-    <div 
-      className={`projects__item ${ cardTitle == title ? 'projects__item--active' : null }`}
+    <div
+      className={`projects__item ${cardTitle == title ? 'projects__item--active' : null}`}
       data-content={title}
       onClick={() => handleCard(project)}
     >
@@ -241,13 +255,13 @@ const Projects = () => {
         <aside className='projects-list'>
 
           {
-            proyectos.map( project => (
-              <ProjectListItem 
-                key={ project.id} 
-                project={ project }
-                cardInfo={ cardInfo }
-                setCardInfo={ setCardInfo }
-                setPortada={ setPortada }
+            proyectos.map(project => (
+              <ProjectListItem
+                key={project.id}
+                project={project}
+                cardInfo={cardInfo}
+                setCardInfo={setCardInfo}
+                setPortada={setPortada}
               />
             ))
           }
